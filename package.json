@@ -1,0 +1,66 @@
+{
+  "name": "vue-koa-jwt",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "server": "nodemon server/index.js",
+    "dev": "concurrently \"npm run serve\" \"npm run server\"",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "@koa/cors": "^2.2.3",
+    "axios": "^0.18.0",
+    "element-ui": "^2.5.2",
+    "jsonwebtoken": "^8.4.0",
+    "koa": "^2.7.0",
+    "koa-body": "^4.0.7",
+    "koa-convert": "^1.2.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa2-cors": "^2.0.6",
+    "localforage": "^1.7.3",
+    "lodash": "^4.17.11",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.9",
+    "vue": "^2.5.21",
+    "vue-router": "^3.0.2",
+    "vuex": "^3.1.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.3.0",
+    "@vue/cli-plugin-eslint": "^3.3.0",
+    "@vue/cli-service": "^3.3.0",
+    "babel-eslint": "^10.0.1",
+    "concurrently": "^4.1.0",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
